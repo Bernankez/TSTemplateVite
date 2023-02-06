@@ -53,6 +53,7 @@
   "devDependencies": {
     "@bernankez/eslint-config": "^0.2.1",
     "@types/node": "^18.11.19",
+    "bumpp": "^8.2.1",
     "changelogithub": "^0.12.7",
     "eslint": "^8.33.0",
     "husky": "^8.0.3",

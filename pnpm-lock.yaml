@@ -1,30 +1,34 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@bernankez/eslint-config': ^0.2.1
-  '@types/node': ^18.11.19
-  changelogithub: ^0.12.7
-  eslint: ^8.33.0
-  husky: ^8.0.3
-  lint-staged: ^13.1.0
-  tsx: ^3.12.3
-  typescript: ^4.9.5
-  vite: ^4.1.0
-  vite-plugin-dts: ^1.7.2
-  vitest: ^0.28.4
+importers:
 
-devDependencies:
-  '@bernankez/eslint-config': 0.2.1_4vsywjlpuriuw3tl5oq6zy5a64
-  '@types/node': 18.11.19
-  changelogithub: 0.12.7
-  eslint: 8.33.0
-  husky: 8.0.3
-  lint-staged: 13.1.0
-  tsx: 3.12.3
-  typescript: 4.9.5
-  vite: 4.1.1_@types+node@18.11.19
-  vite-plugin-dts: 1.7.2_7rbuztiipedpplj3l6jjehnwyi
-  vitest: 0.28.4
+  .:
+    specifiers:
+      '@bernankez/eslint-config': ^0.2.1
+      '@types/node': ^18.11.19
+      bumpp: ^8.2.1
+      changelogithub: ^0.12.7
+      eslint: ^8.33.0
+      husky: ^8.0.3
+      lint-staged: ^13.1.0
+      tsx: ^3.12.3
+      typescript: ^4.9.5
+      vite: ^4.1.0
+      vite-plugin-dts: ^1.7.2
+      vitest: ^0.28.4
+    devDependencies:
+      '@bernankez/eslint-config': 0.2.1_4vsywjlpuriuw3tl5oq6zy5a64
+      '@types/node': 18.11.19
+      bumpp: 8.2.1
+      changelogithub: 0.12.7
+      eslint: 8.33.0
+      husky: 8.0.3
+      lint-staged: 13.1.0
+      tsx: 3.12.3
+      typescript: 4.9.5
+      vite: 4.1.1_@types+node@18.11.19
+      vite-plugin-dts: 1.7.2_7rbuztiipedpplj3l6jjehnwyi
+      vitest: 0.28.4
 
 packages:
 
@@ -415,6 +419,16 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@jsdevtools/ez-spawn/3.0.4:
+    resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
+    engines: {node: '>=10'}
+    dependencies:
+      call-me-maybe: 1.0.2
+      cross-spawn: 7.0.3
+      string-argv: 0.3.1
+      type-detect: 4.0.8
     dev: true
 
   /@microsoft/api-extractor-model/7.26.3_@types+node@18.11.19:
@@ -937,6 +951,19 @@ packages:
       semver: 7.3.8
     dev: true
 
+  /bumpp/8.2.1:
+    resolution: {integrity: sha512-4tHKsWC2mqHQvdjZ4AXgVhS2xMsz8qQ4zYt87vGRXW5tqAjrYa/UJqy7s/dGYI2OIe9ghBdiFhKpyKEX9SXffg==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@jsdevtools/ez-spawn': 3.0.4
+      cac: 6.7.14
+      fast-glob: 3.2.12
+      kleur: 4.1.5
+      prompts: 2.4.2
+      semver: 7.3.8
+    dev: true
+
   /busboy/1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
     engines: {node: '>=10.16.0'}
@@ -982,6 +1009,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
       get-intrinsic: 1.2.0
+    dev: true
+
+  /call-me-maybe/1.0.2:
+    resolution: {integrity: sha512-HpX65o1Hnr9HH25ojC1YGs7HCQLq0GCOibSaWER0eNpgJ/Z1MZv2mTc7+xh6WOPxbRVcmgbv4hGU+uSQ/2xFZQ==}
     dev: true
 
   /callsites/3.1.0:
@@ -2625,6 +2656,16 @@ packages:
       graceful-fs: 4.2.10
     dev: true
 
+  /kleur/3.0.3:
+    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
+    dev: true
+
+  /kleur/4.1.5:
+    resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
+    engines: {node: '>=6'}
+    dev: true
+
   /kolorist/1.7.0:
     resolution: {integrity: sha512-ymToLHqL02udwVdbkowNpzjFd6UzozMtshPQKVi5k1EjKRqKqBrOnE9QbLEb0/pV76SAiIT13hdL8R6suc+f3g==}
     dev: true
@@ -3202,6 +3243,14 @@ packages:
       react-is: 17.0.2
     dev: true
 
+  /prompts/2.4.2:
+    resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
+    engines: {node: '>= 6'}
+    dependencies:
+      kleur: 3.0.3
+      sisteransi: 1.0.5
+    dev: true
+
   /punycode/2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
@@ -3406,6 +3455,10 @@ packages:
 
   /signal-exit/3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
+    dev: true
+
+  /sisteransi/1.0.5:
+    resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
   /slash/3.0.0:
